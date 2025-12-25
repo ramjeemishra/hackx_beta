@@ -50,8 +50,6 @@ const LoadingScreen: React.FC = () => {
           />
         </div>
       </motion.div>
-
-      {/* Abstract Motion Speed Blur */}
       {lights === 5 && (
         <motion.div 
           initial={{ opacity: 0, x: '-100%' }}
