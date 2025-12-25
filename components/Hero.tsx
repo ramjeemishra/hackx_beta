@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
           className="relative w-full max-w-[1400px] flex justify-center items-center"
         >
           <motion.img
-            src="/images/f1.png"
+            src="https://github.com/ramjeemishra/hackx_beta/blob/main/images/f1.png?raw=true"
             alt="F1 Racing Car"
             animate={{
               y: [0, -8, 0],
