@@ -125,7 +125,7 @@ const Hero: React.FC = () => {
           February 28 – March 1, 2026
         </p>
         <p className="text-xs font-black text-black italic">
-          NMIMS University, Navi Mumbai
+          NMIMS University, Mumbai
         </p>
       </motion.div>
     </section>

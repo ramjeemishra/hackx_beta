@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
       <div className="flex items-center space-x-2">
         <span className="text-2xl md:text-3xl font-black italic tracking-tighter text-red-600">HACKX</span>
         <div className="hidden md:block w-1 h-8 bg-zinc-200 mx-4 rotate-12" />
-        <span className="hidden md:block text-[10px] font-bold text-zinc-500 uppercase tracking-[0.3em]">NMIMS University</span>
+        <span className="hidden md:block text-[10px] font-bold text-zinc-500 uppercase tracking-[0.3em]">DSC & NMIMS University</span>
       </div>
       
       {/* Desktop Menu */}

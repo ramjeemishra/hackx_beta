@@ -32,6 +32,7 @@ const Footer: React.FC = () => {
         <div>
           <h4 className="text-[10px] font-black text-white uppercase tracking-[0.3em] mb-6">Organized By</h4>
           <ul className="space-y-4 text-xs font-bold text-white/40 uppercase tracking-widest">
+            <li>DSC ITM</li>
             <li>GDG NMIMS</li>
             <li>IEEE NMIMS</li>
             <li>GDG UMIT</li>
@@ -41,8 +42,8 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] font-black uppercase tracking-[0.2em] text-white/20">
-        <p>© 2026 HACKX 4.0. ALL RIGHTS RESERVED.</p>
-        <p>BUILT WITH PASSION BY THE HACKX TEAM</p>
+        <p>© 2026 DSC/HACKX ALL RIGHTS RESERVED.</p>
+        <p>BUILT WITH PASSION BY THE HACKX & DSC TEAM</p>
       </div>
     </footer>
   );

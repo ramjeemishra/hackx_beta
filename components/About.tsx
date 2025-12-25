@@ -44,7 +44,7 @@ const About: React.FC = () => {
             ENGINEER THE <br/><span className="text-red-600">FUTURE</span>
           </h2>
           <p className="text-lg text-zinc-500 font-medium leading-relaxed mb-10 max-w-lg">
-            HackX 4.0 is where technical prowess meets creative strategy. We provide the circuit; you provide the velocity. Optimize your stack and push your limits.
+            HackX 4.0 & DSC is where technical prowess meets creative strategy. We provide the circuit; you provide the velocity. Optimize your stack and push your limits.
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -86,7 +86,7 @@ const About: React.FC = () => {
               <div className="w-2 h-2 rounded-full bg-red-600 animate-pulse shadow-[0_0_15px_rgba(239,68,68,1)]" />
               <span className="text-[10px] font-black text-white uppercase tracking-[0.3em]">CHASSIS_DIAGNOSTIC: LIVE</span>
             </div>
-            <p className="text-[8px] font-mono text-zinc-600">SECTOR_ID: NAVI_MUMBAI_04</p>
+            <p className="text-[8px] font-mono text-zinc-600">SECTOR_ID: ANDHERI_MUMBAI_04</p>
           </div>
 
           <div className="absolute top-10 right-10 z-20 text-right">
