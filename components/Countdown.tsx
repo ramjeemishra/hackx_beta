@@ -20,22 +20,26 @@ const Countdown: React.FC = () => {
     return () => clearInterval(timer);
   }, []);
 
-  return (
-    <div className="flex space-x-8 md:space-x-12">
-      {[
-        { label: 'WEEKS', val: '09' },
-        { label: 'DAYS', val: timeLeft.days.toString().padStart(2, '0') },
-        { label: 'HRS', val: timeLeft.hours.toString().padStart(2, '0') }
-      ].map(item => (
-        <div key={item.label} className="flex flex-col items-center">
-          <span className="text-5xl md:text-7xl font-black italic tracking-tighter text-black leading-none mb-2">
-            {item.val}
-          </span>
-          <span className="text-[10px] uppercase font-black text-red-600 tracking-widest">{item.label}</span>
-        </div>
-      ))}
-    </div>
-  );
+ return (
+  <div className="flex space-x-8 md:space-x-12 bg-black/60 px-8 py-6 rounded-md backdrop-blur-sm">
+    {[
+      { label: "WEEKS", val: "09" },
+      { label: "DAYS", val: timeLeft.days.toString().padStart(2, "0") },
+      { label: "HRS", val: timeLeft.hours.toString().padStart(2, "0") },
+    ].map((item) => (
+      <div key={item.label} className="flex flex-col items-center">
+        <span className="text-5xl md:text-7xl font-black italic tracking-tighter text-white leading-none mb-2">
+          {item.val}
+        </span>
+        <span className="text-[10px] uppercase font-bold text-zinc-300 tracking-widest">
+          {item.label}
+        </span>
+      </div>
+    ))}
+  </div>
+);
+
+
 };
 
 export default Countdown;
