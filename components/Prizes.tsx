@@ -9,13 +9,12 @@ import {
   useVelocity
 } from "framer-motion";
 import bottle from "../images/bottle.png";
+import flag from "../images/flag.png";
 
 const container: Variants = {
   hidden: {},
   show: {
-    transition: {
-      staggerChildren: 0.22
-    }
+    transition: { staggerChildren: 0.22 }
   }
 };
 
@@ -66,6 +65,26 @@ const Prizes: React.FC = () => {
       <div className="absolute inset-0 opacity-[0.035] bg-[radial-gradient(circle_at_1px_1px,#fff_1px,transparent_0)] bg-[length:14px_14px]" />
 
       <div className="absolute inset-0 pointer-events-none z-10 hidden md:block">
+        <div className="absolute left-[10%] bottom-[54%] w-[360px] pointer-events-none">
+          <motion.div
+            style={{ opacity: glow }}
+            className="
+      absolute inset-0
+      bg-white/40
+      blur-[40px]
+      rounded-full
+      mix-blend-soft-light
+      mask-image-[radial-gradient(circle,white_40%,transparent_70%)]
+    "
+          />
+          <motion.img
+            src={flag}
+            style={{ opacity: glow }}
+            className="relative w-full blur-[1px] rotate-[-22deg]"
+            alt=""
+          />
+        </div>
+
         <motion.img
           src={bottle}
           style={{ opacity: glow }}
