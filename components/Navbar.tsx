@@ -19,7 +19,6 @@ const Navbar: React.FC = () => {
         <span className="hidden md:block text-[10px] font-bold text-zinc-500 uppercase tracking-[0.3em]">DSC & NMIMS University</span>
       </div>
       
-      {/* Desktop Menu */}
       <ul className="hidden lg:flex items-center space-x-10">
         {links.map((link) => (
           <li key={link} className="group relative">
@@ -47,7 +46,6 @@ const Navbar: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div

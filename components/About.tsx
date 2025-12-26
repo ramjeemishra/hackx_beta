@@ -7,7 +7,6 @@ const About: React.FC = () => {
   const [activeHotspot, setActiveHotspot] = useState<string | null>(null);
   const [systemLog, setSystemLog] = useState<string[]>([]);
 
-  // Simulate a live terminal log
   useEffect(() => {
     const logs = [
       "0x4F_AERO_SYNC_OK", "0x22_CORE_TEMP_34.5C", "0x8D_DRS_ENABLED", 
@@ -29,7 +28,6 @@ const About: React.FC = () => {
   return (
     <section id="about" className="bg-white scroll-mt-24 py-20 md:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
-        {/* Left Side: Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -62,25 +60,21 @@ const About: React.FC = () => {
           </div>
         </motion.div>
         
-        {/* Right Side: Generative Technical Chassis Module */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           className="relative aspect-square lg:aspect-[5/6] bg-zinc-950 rounded-[60px] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.5)] group border-4 border-zinc-900"
         >
-          {/* Background Layers */}
           <div className="absolute inset-0 f1-grid opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-tr from-red-600/10 via-transparent to-blue-600/10" />
           
-          {/* Scanning Effect */}
           <motion.div 
             animate={{ y: ['-100%', '200%'] }}
             transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
             className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-transparent via-red-600/20 to-transparent pointer-events-none z-10"
           />
 
-          {/* Technical HUD Elements (Corners) */}
           <div className="absolute top-10 left-10 z-20 space-y-2">
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 rounded-full bg-red-600 animate-pulse shadow-[0_0_15px_rgba(239,68,68,1)]" />
@@ -103,12 +97,10 @@ const About: React.FC = () => {
              <p className="text-[8px] font-black text-zinc-500 uppercase tracking-widest">WAVEFORM_ANALYSIS</p>
           </div>
 
-          {/* Center: Generative Wireframe & Particles */}
           <div className="absolute inset-0 flex items-center justify-center p-12">
             <div className="relative w-full h-full">
-              {/* Generative Chassis Wireframe (SVG) */}
               <svg viewBox="0 0 400 600" className="w-full h-full drop-shadow-[0_0_20px_rgba(239,68,68,0.2)]">
-                {/* Main Body Path */}
+
                 <motion.path
                   d="M200 50 L140 100 L140 450 L100 520 L100 560 L300 560 L300 520 L260 450 L260 100 Z"
                   fill="none"
@@ -118,9 +110,9 @@ const About: React.FC = () => {
                   animate={{ strokeDashoffset: [0, 50] }}
                   transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                 />
-                {/* Internal Framework */}
+
                 <path d="M140 180 L260 180 M140 350 L260 350 M200 50 L200 560" stroke="rgba(255,255,255,0.05)" strokeWidth="1" />
-                {/* Wheel Outlines */}
+
                 {[
                   { cx: 100, cy: 150 }, { cx: 300, cy: 150 },
                   { cx: 80, cy: 480 }, { cx: 320, cy: 480 }
@@ -137,7 +129,6 @@ const About: React.FC = () => {
                 ))}
               </svg>
 
-              {/* Aero-Flow Particle Layer */}
               <div className="absolute inset-0 pointer-events-none opacity-40">
                 {[...Array(25)].map((_, i) => (
                   <motion.div
@@ -150,7 +141,6 @@ const About: React.FC = () => {
                 ))}
               </div>
 
-              {/* Technical Hotspots */}
               {hotspots.map((spot) => (
                 <div key={spot.id} className="absolute" style={{ left: spot.x, top: spot.y }}>
                   <motion.button
@@ -181,7 +171,6 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Bottom Module: System Terminal (Left) */}
           <div className="absolute bottom-10 left-10 z-20">
              <div className="bg-black/40 backdrop-blur-md p-5 rounded-[24px] border border-white/5 w-52">
                 <div className="flex items-center space-x-2 mb-3">
@@ -203,7 +192,6 @@ const About: React.FC = () => {
              </div>
           </div>
 
-          {/* Bottom Module: Performance Metrics (Right) */}
           <div className="absolute bottom-10 right-10 z-20 text-right">
              <div className="flex items-baseline space-x-2">
                 <BarChart3 size={14} className="text-red-600" />
@@ -224,7 +212,6 @@ const About: React.FC = () => {
              </div>
           </div>
           
-          {/* Subtle Grid Coordinates */}
           <div className="absolute inset-0 pointer-events-none opacity-10 flex flex-wrap content-start">
              {[...Array(64)].map((_, i) => (
                <div key={i} className="w-1/8 h-1/8 border-[0.5px] border-white/20 relative">

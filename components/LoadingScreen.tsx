@@ -20,7 +20,6 @@ const LoadingScreen: React.FC = () => {
     >
       <div className="absolute inset-0 f1-grid opacity-20" />
       
-      {/* Starting Lights Sequence */}
       <div className="flex space-x-4 mb-20 relative z-10">
         {[1, 2, 3, 4, 5].map((num) => (
           <div key={num} className="flex flex-col items-center space-y-2">

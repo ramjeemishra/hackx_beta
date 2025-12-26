@@ -60,7 +60,6 @@ const PitWallAssistant: React.FC = () => {
             exit={{ opacity: 0, y: 40, scale: 0.9, rotateX: 20 }}
             className="mb-6 w-[400px] bg-white/95 backdrop-blur-3xl border border-white shadow-[0_30px_100px_rgba(0,0,0,0.2)] rounded-[40px] overflow-hidden flex flex-col h-[600px] perspective-1000"
           >
-            {/* Header */}
             <div className="p-6 bg-black flex items-center justify-between">
               <div className="flex items-center space-x-4">
                 <div className="w-10 h-10 bg-red-600 rounded-2xl flex items-center justify-center shadow-lg shadow-red-600/20">
@@ -76,7 +75,6 @@ const PitWallAssistant: React.FC = () => {
               </button>
             </div>
 
-            {/* Chat Messages */}
             <div ref={scrollRef} className="flex-1 overflow-y-auto p-6 space-y-6 custom-scrollbar bg-[#fcfcfc]">
               {messages.map((m, i) => (
                 <div key={i} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
@@ -100,7 +98,6 @@ const PitWallAssistant: React.FC = () => {
               )}
             </div>
 
-            {/* Input */}
             <div className="p-6 bg-white border-t border-black/5">
               <div className="relative">
                 <input
